@@ -16,6 +16,11 @@ a {
     color: black;
 }
 
+.wrapper_a {
+    width: 100%;
+    height: 100%;
+}
+
 a:hover {
     color: #2c2c2c;
     text-decoration: underline;
@@ -181,7 +186,7 @@ section {
     }
 }
 
-#highlights {
+.gallery-container {
     height: 75vh;
     width: 100vw;
     flex-direction: column;
@@ -191,7 +196,6 @@ section {
     background: rgb(250, 250, 250);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /*padding: 2rem 2vw 3rem;*/
 }
 
 .highlights-title {
@@ -219,7 +223,7 @@ section {
 
 .highlight-item-description {
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -227,12 +231,100 @@ section {
 .highlight-image-container {
     overflow: hidden;
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight-image {
     display: block;
-    max-width: 150%;
-    max-height: 150%;
+    max-width: fit-content;
+    height: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
+
+.general-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    background: rgb(190, 190, 190);
+}
+
+@media (max-width: 768px) {
+    .general-section {
+        flex-direction: column-reverse;
+    }
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .left-side {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .right-side {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.content-wrapper {
+    max-width: 75%;
+}
+
+.image-container {
+    width: 80%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        height: 80%;
+    }
+}
+
+/*zoom on hover*/
+.image-container:hover .image {
+    transform: scale(1.1);
+}
+
+
 
