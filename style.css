@@ -246,8 +246,6 @@ section {
 }
 
 .general-section {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,10 +294,11 @@ section {
 
 .content-wrapper {
     max-width: 75%;
+
 }
 
 .image-container {
-    width: 80%;
+    width: fit-content;
     overflow: hidden;
     height: 100%;
     display: flex;
@@ -317,14 +316,54 @@ section {
 
 @media (max-width: 768px) {
     .image-container {
-        height: 80%;
+        height: 60%;
     }
 }
 
-/*zoom on hover*/
-.image-container:hover .image {
-    transform: scale(1.1);
+.zoom-on-hover-short-small {
+    transition: transform 0.2s ease-in-out;
 }
+
+.zoom-on-hover-short-small:hover {
+     transform: scale(1.05);
+}
+
+.zoom-on-hover-short-medium {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover-short-medium:hover {
+     transform: scale(1.1);
+}
+
+.zoom-on-hover-short-large {
+    transition: transform 0.4s ease-in-out;
+}
+
+.zoom-on-hover-short-large:hover {
+     transform: scale(1.15);
+}
+
+
+.round-image-container {
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.round-image {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
 
 
 
