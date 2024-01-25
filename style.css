@@ -48,6 +48,40 @@ header {
     margin: 0;
 }
 
+.right-header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.language-navs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.language-nav {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
+    filter: grayscale(75%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.language-nav.active {
+    filter: grayscale(15%);
+}
+
+.language-nav:hover, .language-nav:focus {
+    transform: scale(110%);
+    filter: grayscale(55%);
+    text-decoration: none;
+}
+
+
 section {
 }
 

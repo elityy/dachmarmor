@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images1 = [
-        "assets/images/blue_sodalite.jpg",
-        "assets/images/white_onyx.jpg",
-        "assets/images/pink_onyx.jpg",
+        "/assets/images/blue_sodalite.jpg",
+        "/assets/images/white_onyx.jpg",
+        "/assets/images/pink_onyx.jpg",
         // ...
     ];
 
     const images2 = [
-        "assets/images/white_onyx.jpg",
-        "assets/images/pink_onyx.jpg",
-        "assets/images/blue_sodalite.jpg",
+        "/assets/images/white_onyx.jpg",
+        "/assets/images/pink_onyx.jpg",
+        "/assets/images/blue_sodalite.jpg",
     ];
 
     const images3 = [
-        "assets/images/pink_onyx.jpg",
-        "assets/images/blue_sodalite.jpg",
-        "assets/images/white_onyx.jpg"
+        "/assets/images/pink_onyx.jpg",
+        "/assets/images/blue_sodalite.jpg",
+        "/assets/images/white_onyx.jpg"
     ];
 
     let index1 = 0;
